@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+/* Branches Section Styles */
+.branches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+   
+}
+
+.branch {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 25px;
+    border-style: solid;
+    border-image: url(border.png) 30round;
+    
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px ;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .branches {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .branch {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .branch {
+        width: 100%;
+    }
+}
